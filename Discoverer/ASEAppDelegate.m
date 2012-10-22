@@ -21,6 +21,11 @@
     [self.serviceDiscovery publishServiceOfType:@"_intairact._tcp" onPort:80];
 }
 
+-(void)applicationWillTerminate:(NSNotification *)notification
+{
+    [self.serviceDiscovery stop];
+}
+
 -(BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
     return YES;
