@@ -13,7 +13,91 @@
 		27F4A6C31635B353007A8F11 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27F4A6C11635B353007A8F11 /* Credits.rtf */; };
 		27F4A6C61635B353007A8F11 /* ASEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F4A6C51635B353007A8F11 /* ASEAppDelegate.m */; };
 		27F4A6C91635B353007A8F11 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F4A6C71635B353007A8F11 /* MainMenu.xib */; };
+		27F4A7031635B445007A8F11 /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27F4A6F91635B423007A8F11 /* CocoaLumberjack.framework */; };
+		27F4A7041635B445007A8F11 /* ServiceDiscovery.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27F4A6E51635B41A007A8F11 /* ServiceDiscovery.framework */; };
+		27F4A7291635B74F007A8F11 /* ServiceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F4A6E51635B41A007A8F11 /* ServiceDiscovery.framework */; };
+		27F4A72A1635B78A007A8F11 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F4A6F91635B423007A8F11 /* CocoaLumberjack.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27F4A6E21635B41A007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270B11901628E5A8005A82FA;
+			remoteInfo = ServiceDiscoveryStaticIOS;
+		};
+		27F4A6E41635B41A007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 270B11B21628E676005A82FA;
+			remoteInfo = ServiceDiscoveryOSX;
+		};
+		27F4A6E61635B41A007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27EB034F16349C4C003F5656;
+			remoteInfo = ServiceDiscoveryIOSTests;
+		};
+		27F4A6E81635B41A007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27EB036B16349D4A003F5656;
+			remoteInfo = ServiceDiscoveryOSXTests;
+		};
+		27F4A6F61635B423007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2765C67C161CC34100E21ECB;
+			remoteInfo = CocoaLumberjackStaticIOS;
+		};
+		27F4A6F81635B423007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2765C6CC161CCD2B00E21ECB;
+			remoteInfo = CocoaLumberjackOSX;
+		};
+		27F4A6FA1635B423007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 271173A41634CCB20077D393;
+			remoteInfo = CocoaLumberjackIOSTests;
+		};
+		27F4A6FC1635B423007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 271173CF1634CE850077D393;
+			remoteInfo = CocoaLumberjackOSXTests;
+		};
+		27F4A7001635B430007A8F11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 270B11B11628E676005A82FA;
+			remoteInfo = ServiceDiscoveryOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27F4A7021635B437007A8F11 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27F4A7031635B445007A8F11 /* CocoaLumberjack.framework in CopyFiles */,
+				27F4A7041635B445007A8F11 /* ServiceDiscovery.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27F4A6AE1635B353007A8F11 /* Discoverer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discoverer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +113,8 @@
 		27F4A6C41635B353007A8F11 /* ASEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASEAppDelegate.h; sourceTree = "<group>"; };
 		27F4A6C51635B353007A8F11 /* ASEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASEAppDelegate.m; sourceTree = "<group>"; };
 		27F4A6C81635B353007A8F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServiceDiscovery.xcodeproj; path = Frameworks/ServiceDiscovery/ServiceDiscovery.xcodeproj; sourceTree = "<group>"; };
+		27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaLumberjack.xcodeproj; path = Frameworks/ServiceDiscovery/Frameworks/CocoaLumberjack/CocoaLumberjack.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +123,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F4A6B31635B353007A8F11 /* Cocoa.framework in Frameworks */,
+				27F4A72A1635B78A007A8F11 /* CocoaLumberjack.framework in Frameworks */,
+				27F4A7291635B74F007A8F11 /* ServiceDiscovery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +151,8 @@
 		27F4A6B11635B353007A8F11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */,
+				27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */,
 				27F4A6B21635B353007A8F11 /* Cocoa.framework */,
 				27F4A6B41635B353007A8F11 /* Other Frameworks */,
 			);
@@ -102,6 +192,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27F4A6D41635B41A007A8F11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F4A6E31635B41A007A8F11 /* libServiceDiscovery.a */,
+				27F4A6E51635B41A007A8F11 /* ServiceDiscovery.framework */,
+				27F4A6E71635B41A007A8F11 /* ServiceDiscoveryIOSTests.octest */,
+				27F4A6E91635B41A007A8F11 /* ServiceDiscoveryOSXTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F4A6EF1635B423007A8F11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F4A6F71635B423007A8F11 /* libCocoaLumberjack.a */,
+				27F4A6F91635B423007A8F11 /* CocoaLumberjack.framework */,
+				27F4A6FB1635B423007A8F11 /* CocoaLumberjackIOSTests.octest */,
+				27F4A6FD1635B423007A8F11 /* CocoaLumberjackOSXTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,10 +224,12 @@
 				27F4A6AA1635B353007A8F11 /* Sources */,
 				27F4A6AB1635B353007A8F11 /* Frameworks */,
 				27F4A6AC1635B353007A8F11 /* Resources */,
+				27F4A7021635B437007A8F11 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27F4A7011635B430007A8F11 /* PBXTargetDependency */,
 			);
 			name = Discoverer;
 			productName = Discoverer;
@@ -142,12 +256,81 @@
 			mainGroup = 27F4A6A31635B353007A8F11;
 			productRefGroup = 27F4A6AF1635B353007A8F11 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27F4A6EF1635B423007A8F11 /* Products */;
+					ProjectRef = 27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */;
+				},
+				{
+					ProductGroup = 27F4A6D41635B41A007A8F11 /* Products */;
+					ProjectRef = 27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				27F4A6AD1635B353007A8F11 /* Discoverer */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		27F4A6E31635B41A007A8F11 /* libServiceDiscovery.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libServiceDiscovery.a;
+			remoteRef = 27F4A6E21635B41A007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6E51635B41A007A8F11 /* ServiceDiscovery.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ServiceDiscovery.framework;
+			remoteRef = 27F4A6E41635B41A007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6E71635B41A007A8F11 /* ServiceDiscoveryIOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ServiceDiscoveryIOSTests.octest;
+			remoteRef = 27F4A6E61635B41A007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6E91635B41A007A8F11 /* ServiceDiscoveryOSXTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ServiceDiscoveryOSXTests.octest;
+			remoteRef = 27F4A6E81635B41A007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6F71635B423007A8F11 /* libCocoaLumberjack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaLumberjack.a;
+			remoteRef = 27F4A6F61635B423007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6F91635B423007A8F11 /* CocoaLumberjack.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjack.framework;
+			remoteRef = 27F4A6F81635B423007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6FB1635B423007A8F11 /* CocoaLumberjackIOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaLumberjackIOSTests.octest;
+			remoteRef = 27F4A6FA1635B423007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27F4A6FD1635B423007A8F11 /* CocoaLumberjackOSXTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CocoaLumberjackOSXTests.octest;
+			remoteRef = 27F4A6FC1635B423007A8F11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		27F4A6AC1635B353007A8F11 /* Resources */ = {
@@ -173,6 +356,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F4A7011635B430007A8F11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ServiceDiscoveryOSX;
+			targetProxy = 27F4A7001635B430007A8F11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27F4A6BB1635B353007A8F11 /* InfoPlist.strings */ = {
@@ -294,6 +485,7 @@
 				27F4A6CE1635B353007A8F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
