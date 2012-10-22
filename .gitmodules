@@ -1,0 +1,3 @@
+[submodule "Frameworks/ServiceDiscovery"]
+	path = Frameworks/ServiceDiscovery
+	url = https://github.com/ase-lab/ServiceDiscovery.git
