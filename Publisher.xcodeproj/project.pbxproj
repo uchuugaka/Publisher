@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277EF88216362459003EAEFF /* ASEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 277EF88116362459003EAEFF /* ASEAppDelegate.m */; };
+		277EF8861636246E003EAEFF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277EF8841636246E003EAEFF /* MainMenu.xib */; };
+		277EF88C16362485003EAEFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 277EF88A16362485003EAEFF /* InfoPlist.strings */; };
+		277EF88F1636248D003EAEFF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 277EF88D1636248D003EAEFF /* Credits.rtf */; };
+		277EF89116362492003EAEFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 277EF89016362492003EAEFF /* main.m */; };
 		27F4A6B31635B353007A8F11 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F4A6B21635B353007A8F11 /* Cocoa.framework */; };
-		27F4A6BD1635B353007A8F11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F4A6BB1635B353007A8F11 /* InfoPlist.strings */; };
-		27F4A6BF1635B353007A8F11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F4A6BE1635B353007A8F11 /* main.m */; };
-		27F4A6C31635B353007A8F11 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 27F4A6C11635B353007A8F11 /* Credits.rtf */; };
-		27F4A6C61635B353007A8F11 /* ASEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F4A6C51635B353007A8F11 /* ASEAppDelegate.m */; };
-		27F4A6C91635B353007A8F11 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F4A6C71635B353007A8F11 /* MainMenu.xib */; };
 		27F4A7031635B445007A8F11 /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27F4A6F91635B423007A8F11 /* CocoaLumberjack.framework */; };
 		27F4A7041635B445007A8F11 /* ServiceDiscovery.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27F4A6E51635B41A007A8F11 /* ServiceDiscovery.framework */; };
 		27F4A7291635B74F007A8F11 /* ServiceDiscovery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F4A6E51635B41A007A8F11 /* ServiceDiscovery.framework */; };
@@ -100,19 +100,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		27F4A6AE1635B353007A8F11 /* Discoverer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discoverer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		277EF88016362459003EAEFF /* ASEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASEAppDelegate.h; path = Publisher/ASEAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		277EF88116362459003EAEFF /* ASEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASEAppDelegate.m; path = Publisher/ASEAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		277EF8851636246E003EAEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Publisher/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		277EF88716362476003EAEFF /* Publisher-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Publisher-Info.plist"; path = "Publisher/Publisher-Info.plist"; sourceTree = SOURCE_ROOT; };
+		277EF88B16362485003EAEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Publisher/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		277EF88E1636248D003EAEFF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Publisher/en.lproj/Credits.rtf; sourceTree = SOURCE_ROOT; };
+		277EF89016362492003EAEFF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Publisher/main.m; sourceTree = SOURCE_ROOT; };
+		277EF8921636249B003EAEFF /* Publisher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Publisher-Prefix.pch"; path = "Publisher/Publisher-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		27F4A6AE1635B353007A8F11 /* Publisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Publisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F4A6B21635B353007A8F11 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		27F4A6B51635B353007A8F11 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		27F4A6B61635B353007A8F11 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		27F4A6B71635B353007A8F11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		27F4A6BA1635B353007A8F11 /* Discoverer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Discoverer-Info.plist"; sourceTree = "<group>"; };
-		27F4A6BC1635B353007A8F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		27F4A6BE1635B353007A8F11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27F4A6C01635B353007A8F11 /* Discoverer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Discoverer-Prefix.pch"; sourceTree = "<group>"; };
-		27F4A6C21635B353007A8F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		27F4A6C41635B353007A8F11 /* ASEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASEAppDelegate.h; sourceTree = "<group>"; };
-		27F4A6C51635B353007A8F11 /* ASEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASEAppDelegate.m; sourceTree = "<group>"; };
-		27F4A6C81635B353007A8F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		27F4A6D31635B41A007A8F11 /* ServiceDiscovery.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ServiceDiscovery.xcodeproj; path = Frameworks/ServiceDiscovery/ServiceDiscovery.xcodeproj; sourceTree = "<group>"; };
 		27F4A6EE1635B423007A8F11 /* CocoaLumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaLumberjack.xcodeproj; path = Frameworks/ServiceDiscovery/Frameworks/CocoaLumberjack/CocoaLumberjack.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,7 +134,7 @@
 		27F4A6A31635B353007A8F11 = {
 			isa = PBXGroup;
 			children = (
-				27F4A6B81635B353007A8F11 /* Discoverer */,
+				27F4A6B81635B353007A8F11 /* Publisher */,
 				27F4A6B11635B353007A8F11 /* Frameworks */,
 				27F4A6AF1635B353007A8F11 /* Products */,
 			);
@@ -143,7 +143,7 @@
 		27F4A6AF1635B353007A8F11 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27F4A6AE1635B353007A8F11 /* Discoverer.app */,
+				27F4A6AE1635B353007A8F11 /* Publisher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,25 +169,26 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		27F4A6B81635B353007A8F11 /* Discoverer */ = {
+		27F4A6B81635B353007A8F11 /* Publisher */ = {
 			isa = PBXGroup;
 			children = (
-				27F4A6C41635B353007A8F11 /* ASEAppDelegate.h */,
-				27F4A6C51635B353007A8F11 /* ASEAppDelegate.m */,
-				27F4A6C71635B353007A8F11 /* MainMenu.xib */,
+				277EF88016362459003EAEFF /* ASEAppDelegate.h */,
+				277EF88116362459003EAEFF /* ASEAppDelegate.m */,
+				277EF8841636246E003EAEFF /* MainMenu.xib */,
 				27F4A6B91635B353007A8F11 /* Supporting Files */,
 			);
+			name = Publisher;
 			path = Discoverer;
 			sourceTree = "<group>";
 		};
 		27F4A6B91635B353007A8F11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27F4A6BA1635B353007A8F11 /* Discoverer-Info.plist */,
-				27F4A6BB1635B353007A8F11 /* InfoPlist.strings */,
-				27F4A6BE1635B353007A8F11 /* main.m */,
-				27F4A6C01635B353007A8F11 /* Discoverer-Prefix.pch */,
-				27F4A6C11635B353007A8F11 /* Credits.rtf */,
+				277EF88716362476003EAEFF /* Publisher-Info.plist */,
+				277EF88A16362485003EAEFF /* InfoPlist.strings */,
+				277EF89016362492003EAEFF /* main.m */,
+				277EF8921636249B003EAEFF /* Publisher-Prefix.pch */,
+				277EF88D1636248D003EAEFF /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27F4A6AD1635B353007A8F11 /* Discoverer */ = {
+		27F4A6AD1635B353007A8F11 /* Publisher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27F4A6CC1635B353007A8F11 /* Build configuration list for PBXNativeTarget "Discoverer" */;
+			buildConfigurationList = 27F4A6CC1635B353007A8F11 /* Build configuration list for PBXNativeTarget "Publisher" */;
 			buildPhases = (
 				27F4A6AA1635B353007A8F11 /* Sources */,
 				27F4A6AB1635B353007A8F11 /* Frameworks */,
@@ -231,9 +232,9 @@
 			dependencies = (
 				27F4A7011635B430007A8F11 /* PBXTargetDependency */,
 			);
-			name = Discoverer;
+			name = Publisher;
 			productName = Discoverer;
-			productReference = 27F4A6AE1635B353007A8F11 /* Discoverer.app */;
+			productReference = 27F4A6AE1635B353007A8F11 /* Publisher.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +247,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "ASE Group";
 			};
-			buildConfigurationList = 27F4A6A81635B353007A8F11 /* Build configuration list for PBXProject "Discoverer" */;
+			buildConfigurationList = 27F4A6A81635B353007A8F11 /* Build configuration list for PBXProject "Publisher" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,7 +269,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				27F4A6AD1635B353007A8F11 /* Discoverer */,
+				27F4A6AD1635B353007A8F11 /* Publisher */,
 			);
 		};
 /* End PBXProject section */
@@ -337,9 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F4A6BD1635B353007A8F11 /* InfoPlist.strings in Resources */,
-				27F4A6C31635B353007A8F11 /* Credits.rtf in Resources */,
-				27F4A6C91635B353007A8F11 /* MainMenu.xib in Resources */,
+				277EF8861636246E003EAEFF /* MainMenu.xib in Resources */,
+				277EF88C16362485003EAEFF /* InfoPlist.strings in Resources */,
+				277EF88F1636248D003EAEFF /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F4A6BF1635B353007A8F11 /* main.m in Sources */,
-				27F4A6C61635B353007A8F11 /* ASEAppDelegate.m in Sources */,
+				277EF88216362459003EAEFF /* ASEAppDelegate.m in Sources */,
+				277EF89116362492003EAEFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,28 +367,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		27F4A6BB1635B353007A8F11 /* InfoPlist.strings */ = {
+		277EF8841636246E003EAEFF /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27F4A6BC1635B353007A8F11 /* en */,
+				277EF8851636246E003EAEFF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		277EF88A16362485003EAEFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				277EF88B16362485003EAEFF /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		27F4A6C11635B353007A8F11 /* Credits.rtf */ = {
+		277EF88D1636248D003EAEFF /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27F4A6C21635B353007A8F11 /* en */,
+				277EF88E1636248D003EAEFF /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		27F4A6C71635B353007A8F11 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27F4A6C81635B353007A8F11 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -447,9 +448,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Discoverer/Discoverer-Prefix.pch";
-				INFOPLIST_FILE = "Discoverer/Discoverer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Publisher/Publisher-Prefix.pch";
+				INFOPLIST_FILE = "Publisher/Publisher-Info.plist";
+				PRODUCT_NAME = Publisher;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -459,9 +460,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Discoverer/Discoverer-Prefix.pch";
-				INFOPLIST_FILE = "Discoverer/Discoverer-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Publisher/Publisher-Prefix.pch";
+				INFOPLIST_FILE = "Publisher/Publisher-Info.plist";
+				PRODUCT_NAME = Publisher;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -469,7 +470,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27F4A6A81635B353007A8F11 /* Build configuration list for PBXProject "Discoverer" */ = {
+		27F4A6A81635B353007A8F11 /* Build configuration list for PBXProject "Publisher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27F4A6CA1635B353007A8F11 /* Debug */,
@@ -478,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27F4A6CC1635B353007A8F11 /* Build configuration list for PBXNativeTarget "Discoverer" */ = {
+		27F4A6CC1635B353007A8F11 /* Build configuration list for PBXNativeTarget "Publisher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27F4A6CD1635B353007A8F11 /* Debug */,
