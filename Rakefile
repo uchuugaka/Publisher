@@ -9,7 +9,7 @@ end
 $name="Publisher"
 
 $github_user='ase-lab'
-$github_repo='BonjourPublisher'
+$github_repo='Publisher'
 
 $configuration="Release"
 
