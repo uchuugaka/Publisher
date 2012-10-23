@@ -11,18 +11,20 @@
 
 @property (weak) IBOutlet NSButton *publishToggleButton;
 @property (weak) IBOutlet NSButton *pingPongButton;
+@property (weak) IBOutlet NSTextField *typeField;
+@property (weak) IBOutlet NSTextField *portField;
+@property (weak) IBOutlet NSTextField *statusField;
 
 @end
 
 @implementation ASEAppDelegate
+@synthesize statusField = _statusField;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
 
     self.serviceDiscovery = [SDServiceDiscovery new];
-    [self.serviceDiscovery publishServiceOfType:@"_intairact._tcp" onPort:80];
-    self.isPublishing = YES;
 }
 
 -(void)applicationWillTerminate:(NSNotification *)notification
@@ -39,30 +41,50 @@
 - (IBAction)togglePublishing:(id)sender
 {
     if(self.isPublishing) {
+        self.publishToggleButton.title = @"Publish";
+        [self.portField setEnabled:YES];
+        [self.typeField setEnabled:YES];
+    } else {
+        [self.typeField.window makeFirstResponder:nil];
+        [self.portField.window makeFirstResponder:nil];
+        [self.portField setEnabled:NO];
+        [self.typeField setEnabled:NO];
+        self.publishToggleButton.title = @"Stop Publishing";
+    }
+    [self togglePublishing];
+}
+
+-(void)togglePublishing
+{
+    if(self.isPublishing) {
         [self.serviceDiscovery stopPublishing];
         self.isPublishing = NO;
-        self.publishToggleButton.title = @"Start Publishing";
+        [self.statusField setStringValue:@"Not published!"];
     } else {
-        [self.serviceDiscovery publishServiceOfType:@"_intairact._tcp" onPort:80];
+        [self.serviceDiscovery publishServiceOfType:self.typeField.stringValue onPort:[self.portField.stringValue intValue]];
         self.isPublishing = YES;
-        self.publishToggleButton.title = @"Stop Publishing";
+        [self.statusField setStringValue:@"Published!"];
     }
 }
 
 - (IBAction)pingPong:(id)sender {
     [self.publishToggleButton setEnabled:NO];
     [self.pingPongButton setEnabled:NO];
+    [self.portField setEnabled:NO];
+    [self.typeField setEnabled:NO];
     
     __block int i = 0;
     __block dispatch_block_t block;
     block = ^{
         i++;
-        [self togglePublishing:nil];
+        [self togglePublishing];
         if(i < 10) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC), dispatch_get_main_queue(), block);
         } else {
             [self.publishToggleButton setEnabled:YES];
             [self.pingPongButton setEnabled:YES];
+            [self.portField setEnabled:YES];
+            [self.typeField setEnabled:YES];
         }
     };
     dispatch_async(dispatch_get_main_queue(), block);
