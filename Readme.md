@@ -1,3 +1,3 @@
 # What is Publisher?
 
-A tool to easily publish Bonjour services.
+An OS X app to quickly publish a Bonjour service.
