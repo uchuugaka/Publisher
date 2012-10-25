@@ -23,6 +23,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
 
     self.serviceDiscovery = [SDServiceDiscovery new];
 }
