@@ -74,21 +74,22 @@
     [self.portField setEnabled:NO];
     [self.typeField setEnabled:NO];
     
-    __block int i = 0;
-    __block dispatch_block_t block;
-    block = ^{
-        i++;
+    int64_t delayInSeconds = 3.0;
+    int max = 10;
+    for (int i = 0; i < max; i++) {
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, i * delayInSeconds * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [self togglePublishing];
+        });
+    }
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, max * delayInSeconds * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [self togglePublishing];
-        if(i < 10) {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC), dispatch_get_main_queue(), block);
-        } else {
-            [self.publishToggleButton setEnabled:YES];
-            [self.pingPongButton setEnabled:YES];
-            [self.portField setEnabled:YES];
-            [self.typeField setEnabled:YES];
-        }
-    };
-    dispatch_async(dispatch_get_main_queue(), block);
+        [self.publishToggleButton setEnabled:YES];
+        [self.pingPongButton setEnabled:YES];
+        [self.portField setEnabled:YES];
+        [self.typeField setEnabled:YES];
+    });
 }
 
 @end
