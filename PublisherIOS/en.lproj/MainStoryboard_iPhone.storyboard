@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ASEViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV7-51-mwV">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Port" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK0-FM-NQY">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-x0-gwQ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Publish">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePublish:" destination="2" eventType="touchUpInside" id="IAY-dN-2g3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="_intairact._tcp." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y2x-EV-WFB">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="80" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMy-dY-ngn">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="FlO-ct-i0V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Not published!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub2-tn-d3W">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="620-bp-HMP">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Ping Pong">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pingPong:" destination="2" eventType="touchUpInside" id="SB2-pF-AEc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AV7-51-mwV" firstAttribute="baseline" secondItem="Y2x-EV-WFB" secondAttribute="baseline" type="default" id="5Ir-EY-Pcv"/>
+                            <constraint firstItem="Y2x-EV-WFB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="90" id="Cx5-z6-ccW"/>
+                            <constraint firstItem="620-bp-HMP" firstAttribute="top" secondItem="3" secondAttribute="top" constant="269" id="DN4-NA-7eI"/>
+                            <constraint firstItem="ub2-tn-d3W" firstAttribute="centerX" secondItem="hcm-x0-gwQ" secondAttribute="centerX" type="default" id="FMa-1N-9JD"/>
+                            <constraint firstItem="LK0-FM-NQY" firstAttribute="leading" secondItem="AV7-51-mwV" secondAttribute="leading" type="default" id="Gi5-tX-pxH"/>
+                            <constraint firstItem="ub2-tn-d3W" firstAttribute="top" secondItem="3" secondAttribute="top" constant="30" id="Jun-sL-nos"/>
+                            <constraint firstItem="Y2x-EV-WFB" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="133" id="KsW-7T-som"/>
+                            <constraint firstItem="yMy-dY-ngn" firstAttribute="top" secondItem="3" secondAttribute="top" constant="133" id="aEE-6Q-uyU"/>
+                            <constraint firstItem="AV7-51-mwV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="57" id="fk1-kn-N0C"/>
+                            <constraint firstItem="hcm-x0-gwQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="209" id="gPB-El-68d"/>
+                            <constraint firstItem="yMy-dY-ngn" firstAttribute="leading" secondItem="Y2x-EV-WFB" secondAttribute="leading" type="default" id="jJo-YO-rJf"/>
+                            <constraint firstItem="LK0-FM-NQY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="137" id="xnd-j6-nxJ"/>
+                            <constraint firstItem="620-bp-HMP" firstAttribute="centerX" secondItem="hcm-x0-gwQ" secondAttribute="centerX" type="default" id="z4v-b0-bkm"/>
+                            <constraint firstItem="620-bp-HMP" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="zQK-u9-qZ5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pingPongButton" destination="620-bp-HMP" id="eZ9-hK-mgK"/>
+                        <outlet property="portField" destination="yMy-dY-ngn" id="sDG-ac-Yv8"/>
+                        <outlet property="publishToggleButton" destination="hcm-x0-gwQ" id="pWq-B7-Zx3"/>
+                        <outlet property="statusField" destination="ub2-tn-d3W" id="bkb-Cg-Syo"/>
+                        <outlet property="typeField" destination="Y2x-EV-WFB" id="ZkJ-Cf-mPM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ASEViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ASEViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pingPong:"/>
+                <relationship kind="action" name="togglePublish:"/>
+                <relationship kind="outlet" name="pingPongButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="portField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="publishToggleButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="statusField" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="typeField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
