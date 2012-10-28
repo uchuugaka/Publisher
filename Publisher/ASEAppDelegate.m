@@ -18,7 +18,6 @@
 @end
 
 @implementation ASEAppDelegate
-@synthesize statusField = _statusField;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
